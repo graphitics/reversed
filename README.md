@@ -12,13 +12,13 @@ We decided to use previous project datasets to be reversed and then used as trai
 
 We defined reversing texts as shown below.
 
->**Original text:**
+```
+**Original text:**
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
->"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
->**Reversed text:**
-
+**Reversed text:**
 ".murobal tse di mina tillom tnuresed aiciffo iuq apluc ni tnus ,tnediorp non tatadipuc taceacco tnis ruetpecxE .rutairap allun taiguf ue erolod mullic esse tilev etatpulov ni tiredneherper ni rolod eruri etua siuD .tauqesnoc odommoc ae xe piuqila tu isin sirobal ocmallu noitaticrexe durtson siuq ,mainev minim da mine tU .auqila angam erolod te erobal tu tnudidicni ropmet domsuie od des ,tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL"
+```
 
 ## RNN model
 
@@ -44,47 +44,34 @@ Image 4. Tensorboard log of the training and validation loss of the reversed Sha
 ![Image 4](https://github.com/graphitics/reversed/blob/master/rshakespeare/results/rshakespeare%20loss.png)
 
 ```
-> **Generated text by trained model fed with reversed Shakespeare data:**
+**Generated text by trained model fed with reversed Shakespeare data:**
+.ecarg ruoy ekat ,em tsniaga erac oS
+,em erussa ew taht esoht fo tsaef eht
+no tuo dna ,seye enim fo secnaretnoc eht ni erutan ym ekat ,em evael ,eehtirp
+I ,em ot ti ekat ,em tsniaga ton sita :emoc ew ereh ,yaN ORDEP NOD
+.em evig ,em evig uoy fi ,yA AILIME
+?em evah uoy lliw ,tahW .em evael uoy fi ,eerht yB OISSEC
+.ti fo em tsevael uoht ,erom oN OGAI
+.ti ekat I sa ,yaN OISSAC
+.seirevil ruoy esaelp
+tsum I ,ecneicserc ym ,emoc ,yaN AIVILO
+.em htiw era uoy taht ,yaN OISSAC
+?em htiw kaeps ot ton eb ereht sI OITNECNIV EKUD
 
->.ecarg ruoy ekat ,em tsniaga erac oS
-
->,em erussa ew taht esoht fo tsaef eht
-
->no tuo dna ,seye enim fo secnaretnoc eht ni erutan ym ekat ,em evael ,eehtirp
-
->I ,em ot ti ekat ,em tsniaga ton sita :emoc ew ereh ,yaN ORDEP NOD
-
->.em evig ,em evig uoy fi ,yA AILIME
-
->?em evah uoy lliw ,tahW .em evael uoy fi ,eerht yB OISSEC
-
->.ti fo em tsevael uoht ,erom oN OGAI
-
->.ti ekat I sa ,yaN OISSAC
-
->.seirevil ruoy esaelp
-
->tsum I ,ecneicserc ym ,emoc ,yaN AIVILO
-
->.em htiw era uoy taht ,yaN OISSAC
-
->?em htiw kaeps ot ton eb ereht sI OITNECNIV EKUD
-
-> **Reversion (note that this hasn't been resulted by original Shakespeare training) of the generated text above:**
->DUKE VINCENTIO Is there be not to speak with me?
->CASSIO Nay, that you are with me.
->OLIVIA Nay, come, my crescience, I must
->please your liveries.
->CASSIO Nay, as I take it.
->IAGO No more, thou leavest me of it.
->CESSIO By three, if you leave me. What, will you have me?
->EMILIA Ay, if you give me, give me.
->DON PEDRO Nay, here we come: atis not against me, take it to me, I
->prithee, leave me, take my nature in the conterances of mine eyes, and out on
->the feast of those that we assure me,
->So care against me, take your grace.
+**Reversion (note that this hasn't been resulted by original Shakespeare training) of the generated text above:**
+DUKE VINCENTIO Is there be not to speak with me?
+CASSIO Nay, that you are with me.
+OLIVIA Nay, come, my crescience, I must
+please your liveries.
+CASSIO Nay, as I take it.
+IAGO No more, thou leavest me of it.
+CESSIO By three, if you leave me. What, will you have me?
+EMILIA Ay, if you give me, give me.
+DON PEDRO Nay, here we come: atis not against me, take it to me, I
+prithee, leave me, take my nature in the conterances of mine eyes, and out on
+the feast of those that we assure me,
+So care against me, take your grace.
 ```
-
 2. Following are the statistics and snapshots of training processes on Mongolian dataset.
 
 Table 2: Comparison of training process between original and reversed Laws of Mongolia data
@@ -102,31 +89,33 @@ Image 7. Tensorboard log of the training and validation accuracy of the reversed
 Image 8. Tensorboard log of the training and validation loss of the reversed Laws of Mongolia data
 ![Image 8](https://github.com/graphitics/reversed/blob/master/rlaws/results/reverse%20laws%20loss.jpg)
 
-> **Generated text by trained model fed with reversed Laws of Mongolia data:**
->;халууро днаагаллижа лйү хэгтэцйүг рээгчиб ,хэлүүзү гэлжмэд дахалуурсволоб гыголдоб нйирөт ,хагнах рээллээдэм нйикитситатс йинсэднү.1.1.91
->:анйаб йэтгэрүү гич хаарад агаллуугйаб ынаагрихаз нйирөт нэслэхрэ ладууса нйивсөТ.1.91
->хрэ нэрүб ныград ныгаллуугйаб ынаагрихаз нйирөт нэслэхрэ ладууса нйивсөт ,үүхнаС .лйүз раагуд 5
->.оноотгот раилуух гымруж хэлүүжгэрэх гйижмоотгот ьлуух йахут нйилрөөшвөз йагсут нйахут налуужмад рээлэлсэднү насааз д-1.4 нйилуух энЭ.3.61
->.энэлгэрэх гйигрүү халуурсволоб ланас нйилөлвөз хадриду нөлөөлөт нолоб нйигнас нйо ныслУ логноМ ьн тлироз нйилуух энЭ
->тлироз нйилууХ.лйүз рээгүд 1
->ЛЭЛСЭДНҮ ГЭЛТЙИН
->ГЭЛҮБ РЭЭГҮДГЭН
->ЙАХУТ НЫЛДЙАБ НЙҮЗ хРЭ НЙИЧГЭЛЙИХРЭРҮ
->ГЭЛҮБ РААГУДВАТ
+```
+**Generated text by trained model fed with reversed Laws of Mongolia data:**
+;халууро днаагаллижа лйү хэгтэцйүг рээгчиб ,хэлүүзү гэлжмэд дахалуурсволоб гыголдоб нйирөт ,хагнах рээллээдэм нйикитситатс йинсэднү.1.1.91
+:анйаб йэтгэрүү гич хаарад агаллуугйаб ынаагрихаз нйирөт нэслэхрэ ладууса нйивсөТ.1.91
+хрэ нэрүб ныград ныгаллуугйаб ынаагрихаз нйирөт нэслэхрэ ладууса нйивсөт ,үүхнаС .лйүз раагуд 5
+.оноотгот раилуух гымруж хэлүүжгэрэх гйижмоотгот ьлуух йахут нйилрөөшвөз йагсут нйахут налуужмад рээлэлсэднү насааз д-1.4 нйилуух энЭ.3.61
+.энэлгэрэх гйигрүү халуурсволоб ланас нйилөлвөз хадриду нөлөөлөт нолоб нйигнас нйо ныслУ логноМ ьн тлироз нйилуух энЭ
+тлироз нйилууХ.лйүз рээгүд 1
+ЛЭЛСЭДНҮ ГЭЛТЙИН
+ГЭЛҮБ РЭЭГҮДГЭН
+ЙАХУТ НЫЛДЙАБ НЙҮЗ хРЭ НЙИЧГЭЛЙИХРЭРҮ
+ГЭЛҮБ РААГУДВАТ
 
-> **Reversion (note that this hasn't been resulted by original Laws of Mongolia training) of the generated text above:**
->ТАВДУГААР БҮЛЭГ
->ҮРЭРХИЙЛЭГЧИЙН ЭРх ЗҮЙН БАЙДЛЫН ТУХАЙ
->НЭГДҮГЭЭР БҮЛЭГ
->НИЙТЛЭГ ҮНДЭСЛЭЛ
->1 дүгээр зүйл.Хуулийн зорилт
->Энэ хуулийн зорилт нь Монгол Улсын ойн сангийн болон төлөөлөн удирдах зөвлөлийн санал боловсруулах үүргийг хэрэглэнэ.
->16.3.Энэ хуулийн 4.1-д заасан үндэслэлээр дамжуулан тухайн тусгай зөвшөөрлийн тухай хууль тогтоомжийг хэрэгжүүлэх журмыг хуулиар тогтооно.
->5 дугаар зүйл. Санхүү, төсвийн асуудал эрхэлсэн төрийн захиргааны байгууллагын даргын бүрэн эрх
->19.1.Төсвийн асуудал эрхэлсэн төрийн захиргааны байгууллага дараах чиг үүрэгтэй байна:
->19.1.1.үндэсний статистикийн мэдээллээр хангах, төрийн бодлогыг боловсруулахад дэмжлэг үзүүлэх, бичгээр гүйцэтгэх үйл ажиллагаанд оруулах;
+**Reversion (note that this hasn't been resulted by original Laws of Mongolia training) of the generated text above:**
+ТАВДУГААР БҮЛЭГ
+ҮРЭРХИЙЛЭГЧИЙН ЭРх ЗҮЙН БАЙДЛЫН ТУХАЙ
+НЭГДҮГЭЭР БҮЛЭГ
+НИЙТЛЭГ ҮНДЭСЛЭЛ
+1 дүгээр зүйл.Хуулийн зорилт
+Энэ хуулийн зорилт нь Монгол Улсын ойн сангийн болон төлөөлөн удирдах зөвлөлийн санал боловсруулах үүргийг хэрэглэнэ.
+16.3.Энэ хуулийн 4.1-д заасан үндэслэлээр дамжуулан тухайн тусгай зөвшөөрлийн тухай хууль тогтоомжийг хэрэгжүүлэх журмыг хуулиар тогтооно.
+5 дугаар зүйл. Санхүү, төсвийн асуудал эрхэлсэн төрийн захиргааны байгууллагын даргын бүрэн эрх
+19.1.Төсвийн асуудал эрхэлсэн төрийн захиргааны байгууллага дараах чиг үүрэгтэй байна:
+19.1.1.үндэсний статистикийн мэдээллээр хангах, төрийн бодлогыг боловсруулахад дэмжлэг үзүүлэх, бичгээр гүйцэтгэх үйл ажиллагаанд оруулах;
 
-> **P.S.: The text above makes sense just as the generated text shown in our previous project results here.**
+**P.S.: The text above makes sense just as the generated text shown in our previous project results here.**
+```
 
 ## Conclusion
 
@@ -151,7 +140,11 @@ Now, we are planning to rule out our possible mistakes by:
 2. training on languages that have different writing systems.
 
 Reference:
+
 [1] https://github.com/martin-gorner/tensorflow-rnn-shakespeare
+
 [2] https://karpathy.github.io/2015/05/21/rnn-effectiveness/
+
 [3] Fei-Fei Li & Justin Johnson & Serena Yeung's Lecture 10 slides on Recurrent Neural Networks
+
 [4] http://legalinfo.mn/
