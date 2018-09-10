@@ -4,6 +4,8 @@
 
 We, [Gereltuya](https://github.com/qerelt) and [Yanjinlkham](https://github.com/yanjinlkham), experimented with a character-level RNN language model in Tensorflow[1] with regular texts in English and Mongolian for [our previous project](https://github.com/graphitics/dlub2018) from which the questions above were left unanswered. Therefore, we run some new experiments to find answers for our questions. Although not knowing what results to expect,  we believed that these experiments will help us find our answers somehow.
 
+Reader-friendly version is on Medium [here](https://medium.com/graphitics/an-rnns-adventure-with-various-datasets-f8bcde829810).
+
 ## Data
 
 We decided to use previous project datasets to be reversed and then used as training datasets for this experiment.
@@ -159,3 +161,24 @@ Now, we are planning to rule out our possible mistakes by:
 [3] Fei-Fei Li & Justin Johnson & Serena Yeung's Lecture 10 slides on Recurrent Neural Networks
 
 [4] http://legalinfo.mn/
+
+## Usage:
+
+The usage commands are exactly as they were in Martin Gorner's repository[1].
+
+### To train:
+
+```
+> python3 rnn_train.py
+```
+### To monitor the training process:
+
+```
+> tensorboard --logdir=log
+```
+### To generate text from the learned state:
+```
+> python3 rnn_play.py
+``` 
+   
+Please keep in mind that to generate text, you would have to have downloaded the checkpoints files.
