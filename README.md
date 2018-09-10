@@ -32,10 +32,10 @@ Table 1: Comparison of training process between original and reversed Shakespear
 ![Table 1](https://github.com/graphitics/reversed/blob/master/results/shakespeare%20comparison.png)
 
 Image 1. Tensorboard log of the training and validation accuracy of the original Shakespeare data
-![Image 1](https://github.com/graphitics/reversed/blob/master/laws/results/shakespeare%20accuracy.png)
+![Image 1](https://github.com/graphitics/reversed/blob/master/shakespeare/results/shakespeare%20accuracy.png)
 
 Image 2. Tensorboard log of the training and validation loss of the original Shakespeare data
-![Image 2](https://github.com/graphitics/reversed/blob/master/laws/results/shakespeare%20loss.png)
+![Image 2](https://github.com/graphitics/reversed/blob/master/shakespeare/results/shakespeare%20loss.png)
 
 Image 3. Tensorboard log of the training and validation accuracy of the reversed Shakespeare data
 ![Image 3](https://github.com/graphitics/reversed/blob/master/rshakespeare/results/rshakespeare%20accuracy.png)
@@ -43,8 +43,8 @@ Image 3. Tensorboard log of the training and validation accuracy of the reversed
 Image 4. Tensorboard log of the training and validation loss of the reversed Shakespeare data
 ![Image 4](https://github.com/graphitics/reversed/blob/master/rshakespeare/results/rshakespeare%20loss.png)
 
-```
 **Generated text by trained model fed with reversed Shakespeare data:**
+```
 .ecarg ruoy ekat ,em tsniaga erac oS
 ,em erussa ew taht esoht fo tsaef eht
 no tuo dna ,seye enim fo secnaretnoc eht ni erutan ym ekat ,em evael ,eehtirp
@@ -57,8 +57,10 @@ I ,em ot ti ekat ,em tsniaga ton sita :emoc ew ereh ,yaN ORDEP NOD
 tsum I ,ecneicserc ym ,emoc ,yaN AIVILO
 .em htiw era uoy taht ,yaN OISSAC
 ?em htiw kaeps ot ton eb ereht sI OITNECNIV EKUD
+```
 
 **Reversion (note that this hasn't been resulted by original Shakespeare training) of the generated text above:**
+```
 DUKE VINCENTIO Is there be not to speak with me?
 CASSIO Nay, that you are with me.
 OLIVIA Nay, come, my crescience, I must
@@ -89,8 +91,8 @@ Image 7. Tensorboard log of the training and validation accuracy of the reversed
 Image 8. Tensorboard log of the training and validation loss of the reversed Laws of Mongolia data
 ![Image 8](https://github.com/graphitics/reversed/blob/master/rlaws/results/reverse%20laws%20loss.jpg)
 
-```
 **Generated text by trained model fed with reversed Laws of Mongolia data:**
+```
 ;халууро днаагаллижа лйү хэгтэцйүг рээгчиб ,хэлүүзү гэлжмэд дахалуурсволоб гыголдоб нйирөт ,хагнах рээллээдэм нйикитситатс йинсэднү.1.1.91
 :анйаб йэтгэрүү гич хаарад агаллуугйаб ынаагрихаз нйирөт нэслэхрэ ладууса нйивсөТ.1.91
 хрэ нэрүб ныград ныгаллуугйаб ынаагрихаз нйирөт нэслэхрэ ладууса нйивсөт ,үүхнаС .лйүз раагуд 5
@@ -101,8 +103,10 @@ Image 8. Tensorboard log of the training and validation loss of the reversed Law
 ГЭЛҮБ РЭЭГҮДГЭН
 ЙАХУТ НЫЛДЙАБ НЙҮЗ хРЭ НЙИЧГЭЛЙИХРЭРҮ
 ГЭЛҮБ РААГУДВАТ
+```
 
 **Reversion (note that this hasn't been resulted by original Laws of Mongolia training) of the generated text above:**
+```
 ТАВДУГААР БҮЛЭГ
 ҮРЭРХИЙЛЭГЧИЙН ЭРх ЗҮЙН БАЙДЛЫН ТУХАЙ
 НЭГДҮГЭЭР БҮЛЭГ
@@ -113,9 +117,8 @@ Image 8. Tensorboard log of the training and validation loss of the reversed Law
 5 дугаар зүйл. Санхүү, төсвийн асуудал эрхэлсэн төрийн захиргааны байгууллагын даргын бүрэн эрх
 19.1.Төсвийн асуудал эрхэлсэн төрийн захиргааны байгууллага дараах чиг үүрэгтэй байна:
 19.1.1.үндэсний статистикийн мэдээллээр хангах, төрийн бодлогыг боловсруулахад дэмжлэг үзүүлэх, бичгээр гүйцэтгэх үйл ажиллагаанд оруулах;
-
-**P.S.: The text above makes sense just as the generated text shown in our previous project results here.**
 ```
+**P.S.: The text above makes sense just as the generated text shown in our previous project results here.**
 
 ## Conclusion
 
