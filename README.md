@@ -11,12 +11,13 @@ We decided to use previous project datasets to be reversed and then used as trai
 2. Mongolian dataset: [Laws of Mongolia](https://github.com/graphitics/dlub2018/tree/master/laws/tdata), 22.5 MB
 
 We defined reversing texts as shown below.
-
-```
 **Original text:**
+```
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+```
 
 **Reversed text:**
+```
 ".murobal tse di mina tillom tnuresed aiciffo iuq apluc ni tnus ,tnediorp non tatadipuc taceacco tnis ruetpecxE .rutairap allun taiguf ue erolod mullic esse tilev etatpulov ni tiredneherper ni rolod eruri etua siuD .tauqesnoc odommoc ae xe piuqila tu isin sirobal ocmallu noitaticrexe durtson siuq ,mainev minim da mine tU .auqila angam erolod te erobal tu tnudidicni ropmet domsuie od des ,tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL"
 ```
 
@@ -26,7 +27,7 @@ Bearing intention to make clear and understandable comparisons with the previous
 
 ## Results
 
-1. Following are statistics and snapshots of training processes on English dataset.
+### 1. Following are statistics and snapshots of training processes on English dataset.
 
 Table 1: Comparison of training process between original and reversed Shakespeare data
 ![Table 1](https://github.com/graphitics/reversed/blob/master/results/shakespeare%20comparison.png)
@@ -74,7 +75,7 @@ prithee, leave me, take my nature in the conterances of mine eyes, and out on
 the feast of those that we assure me,
 So care against me, take your grace.
 ```
-2. Following are the statistics and snapshots of training processes on Mongolian dataset.
+### 2. Following are the statistics and snapshots of training processes on Mongolian dataset.
 
 Table 2: Comparison of training process between original and reversed Laws of Mongolia data
 ![Table 2](https://github.com/graphitics/reversed/blob/master/results/laws%20comparison.png)
@@ -142,7 +143,7 @@ Now, we are planning to rule out our possible mistakes by:
 1. choosing different data transformation for this model as well as choosing different language model for this transformation; and then, more experiments;
 2. training on languages that have different writing systems.
 
-Reference:
+## Reference:
 
 [1] https://github.com/martin-gorner/tensorflow-rnn-shakespeare
 
