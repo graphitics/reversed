@@ -2,7 +2,7 @@
 
 > Can machines learn to read languages that humans read forwards backwards? Even when some languages are created to be written from left to right and top to bottom, will there be any pattern, relation, or such to be found when read reversed?
 
-We, [Gereltuya](https://github.com/qerelt), [Yanjinlkham](https://github.com/yanjinlkham), experimented with a character-level RNN language model in Tensorflow[1] with regular texts in English and Mongolian for [our previous project](https://github.com/graphitics/dlub2018) from which the questions above were left unanswered. Therefore, we run some new experiments to find answers for our questions. Although not knowing what results to expect,  we believed that these experiments will help us find our answers somehow.
+We, [Gereltuya](https://github.com/qerelt) and [Yanjinlkham](https://github.com/yanjinlkham), experimented with a character-level RNN language model in Tensorflow[1] with regular texts in English and Mongolian for [our previous project](https://github.com/graphitics/dlub2018) from which the questions above were left unanswered. Therefore, we run some new experiments to find answers for our questions. Although not knowing what results to expect,  we believed that these experiments will help us find our answers somehow.
 
 ## Data
 
@@ -13,9 +13,11 @@ We decided to use previous project datasets to be reversed and then used as trai
 We defined reversing texts as shown below.
 
 >**Original text:**
+
 >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 >**Reversed text:**
+
 ".murobal tse di mina tillom tnuresed aiciffo iuq apluc ni tnus ,tnediorp non tatadipuc taceacco tnis ruetpecxE .rutairap allun taiguf ue erolod mullic esse tilev etatpulov ni tiredneherper ni rolod eruri etua siuD .tauqesnoc odommoc ae xe piuqila tu isin sirobal ocmallu noitaticrexe durtson siuq ,mainev minim da mine tU .auqila angam erolod te erobal tu tnudidicni ropmet domsuie od des ,tile gnicsipida rutetcesnoc ,tema tis rolod muspi meroL"
 
 ## RNN model
@@ -41,18 +43,31 @@ Image 3. Tensorboard log of the training and validation accuracy of the reversed
 Image 4. Tensorboard log of the training and validation loss of the reversed Shakespeare data
 ![Image 4](https://github.com/graphitics/reversed/blob/master/rshakespeare/results/rshakespeare%20loss.png)
 
+```
 > **Generated text by trained model fed with reversed Shakespeare data:**
+
 >.ecarg ruoy ekat ,em tsniaga erac oS
+
 >,em erussa ew taht esoht fo tsaef eht
+
 >no tuo dna ,seye enim fo secnaretnoc eht ni erutan ym ekat ,em evael ,eehtirp
+
 >I ,em ot ti ekat ,em tsniaga ton sita :emoc ew ereh ,yaN ORDEP NOD
+
 >.em evig ,em evig uoy fi ,yA AILIME
+
 >?em evah uoy lliw ,tahW .em evael uoy fi ,eerht yB OISSEC
+
 >.ti fo em tsevael uoht ,erom oN OGAI
+
 >.ti ekat I sa ,yaN OISSAC
+
 >.seirevil ruoy esaelp
+
 >tsum I ,ecneicserc ym ,emoc ,yaN AIVILO
+
 >.em htiw era uoy taht ,yaN OISSAC
+
 >?em htiw kaeps ot ton eb ereht sI OITNECNIV EKUD
 
 > **Reversion (note that this hasn't been resulted by original Shakespeare training) of the generated text above:**
@@ -68,6 +83,7 @@ Image 4. Tensorboard log of the training and validation loss of the reversed Sha
 >prithee, leave me, take my nature in the conterances of mine eyes, and out on
 >the feast of those that we assure me,
 >So care against me, take your grace.
+```
 
 2. Following are the statistics and snapshots of training processes on Mongolian dataset.
 
@@ -75,10 +91,10 @@ Table 2: Comparison of training process between original and reversed Laws of Mo
 ![Table 2](https://github.com/graphitics/reversed/blob/master/results/laws%20comparison.png)
 
 Image 5. Tensorboard log of the training accuracy of the original Laws of Mongolia data
-![Image 5](https://github.com/graphitics/reversed/blob/master/laws/results/shakespeare%20accuracy.png)
+![Image 5](https://github.com/graphitics/reversed/blob/master/laws/results/laws%20accuracy.png)
 
 Image 6. Tensorboard log of the training loss of the original Laws of Mongolia data
-![Image 6](https://github.com/graphitics/reversed/blob/master/laws/results/shakespeare%20loss.png)
+![Image 6](https://github.com/graphitics/reversed/blob/master/laws/results/laws%20loss.png)
 
 Image 7. Tensorboard log of the training and validation accuracy of the reversed Laws of Mongolia data
 ![Image 7](https://github.com/graphitics/reversed/blob/master/rlaws/results/reverse%20laws%20accuracy.jpg)
