@@ -39,19 +39,19 @@ Bearing intention to make clear and understandable comparisons with the previous
 ### 1. Following are statistics and snapshots of training processes on English dataset.
 
 Table 1: Comparison of training process between original and reversed Shakespeare data
-![Table 1](https://github.com/graphitics/reversed/blob/master/results/shakespeare%20comparison.png)
+![Table 1](https://github.com/graphitics/reversed/blob/main/results/shakespeare%20comparison.png)
 
 Image 1. Tensorboard log of the training and validation accuracy of the original Shakespeare data
-![Image 1](https://github.com/graphitics/reversed/blob/master/shakespeare/results/shakespeare%20accuracy.png)
+![Image 1](https://github.com/graphitics/reversed/blob/main/shakespeare/results/shakespeare%20accuracy.png)
 
 Image 2. Tensorboard log of the training and validation loss of the original Shakespeare data
-![Image 2](https://github.com/graphitics/reversed/blob/master/shakespeare/results/shakespeare%20loss.png)
+![Image 2](https://github.com/graphitics/reversed/blob/main/shakespeare/results/shakespeare%20loss.png)
 
 Image 3. Tensorboard log of the training and validation accuracy of the reversed Shakespeare data
-![Image 3](https://github.com/graphitics/reversed/blob/master/rshakespeare/results/rshakespeare%20accuracy.png)
+![Image 3](https://github.com/graphitics/reversed/blob/main/rshakespeare/results/rshakespeare%20accuracy.png)
 
 Image 4. Tensorboard log of the training and validation loss of the reversed Shakespeare data
-![Image 4](https://github.com/graphitics/reversed/blob/master/rshakespeare/results/rshakespeare%20loss.png)
+![Image 4](https://github.com/graphitics/reversed/blob/main/rshakespeare/results/rshakespeare%20loss.png)
 
 **Generated text by trained model fed with reversed Shakespeare data:**
 ```
@@ -87,19 +87,19 @@ So care against me, take your grace.
 ### 2. Following are the statistics and snapshots of training processes on Mongolian dataset.
 
 Table 2: Comparison of training process between original and reversed Laws of Mongolia data
-![Table 2](https://github.com/graphitics/reversed/blob/master/results/laws%20comparison.png)
+![Table 2](https://github.com/graphitics/reversed/blob/main/results/laws%20comparison.png)
 
 Image 5. Tensorboard log of the training accuracy of the original Laws of Mongolia data
-![Image 5](https://github.com/graphitics/reversed/blob/master/laws/results/laws%20accuracy.png)
+![Image 5](https://github.com/graphitics/reversed/blob/main/laws/results/laws%20accuracy.png)
 
 Image 6. Tensorboard log of the training loss of the original Laws of Mongolia data
-![Image 6](https://github.com/graphitics/reversed/blob/master/laws/results/laws%20loss.png)
+![Image 6](https://github.com/graphitics/reversed/blob/main/laws/results/laws%20loss.png)
 
 Image 7. Tensorboard log of the training and validation accuracy of the reversed Laws of Mongolia data
-![Image 7](https://github.com/graphitics/reversed/blob/master/rlaws/results/reverse%20laws%20accuracy.jpg)
+![Image 7](https://github.com/graphitics/reversed/blob/main/rlaws/results/reverse%20laws%20accuracy.jpg)
 
 Image 8. Tensorboard log of the training and validation loss of the reversed Laws of Mongolia data
-![Image 8](https://github.com/graphitics/reversed/blob/master/rlaws/results/reverse%20laws%20loss.jpg)
+![Image 8](https://github.com/graphitics/reversed/blob/main/rlaws/results/reverse%20laws%20loss.jpg)
 
 **Generated text by trained model fed with reversed Laws of Mongolia data:**
 ```
